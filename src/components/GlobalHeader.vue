@@ -65,12 +65,12 @@ router.afterEach((to, from, failure) => {
   selectedKeys.value = [to.path];
 });
 
-setTimeout(() => {
-  store.dispatch("user/getLoginUser", {
-    userName: "TinyRed_Admin",
-    userRole: ACCESS_ENUM.ADMIN,
-  });
-}, 3000);
+// setTimeout(() => {
+//   store.dispatch("user/getLoginUser", {
+//     userName: "TinyRed_Admin",
+//     userRole: ACCESS_ENUM.ADMIN,
+//   });
+// }, 3000);
 
 const doMenuClick = (key: string) => {
   router.push({
