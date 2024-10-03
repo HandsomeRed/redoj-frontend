@@ -1,4 +1,4 @@
-/* generated using openapi-typescript-codegen -- do not edit */
+/* generated using openapi-typescript-codegen -- do no edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
@@ -13,10 +13,13 @@ import type { QuestionAddRequest } from '../models/QuestionAddRequest';
 import type { QuestionEditRequest } from '../models/QuestionEditRequest';
 import type { QuestionQueryRequest } from '../models/QuestionQueryRequest';
 import type { QuestionUpdateRequest } from '../models/QuestionUpdateRequest';
+
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
+
 export class QuestionControllerService {
+
     /**
      * addQuestion
      * @param questAddRequest questAddRequest
@@ -25,8 +28,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static addQuestionUsingPost(
-        questAddRequest: QuestionAddRequest,
-    ): CancelablePromise<BaseResponse_long_ | any> {
+questAddRequest: QuestionAddRequest,
+): CancelablePromise<BaseResponse_long_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/add',
@@ -38,6 +41,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * deleteQuestion
      * @param deleteRequest deleteRequest
@@ -46,8 +50,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static deleteQuestionUsingPost(
-        deleteRequest: DeleteRequest,
-    ): CancelablePromise<BaseResponse_boolean_ | any> {
+deleteRequest: DeleteRequest,
+): CancelablePromise<BaseResponse_boolean_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/delete',
@@ -59,6 +63,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * editQuestion
      * @param questEditRequest questEditRequest
@@ -67,8 +72,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static editQuestionUsingPost(
-        questEditRequest: QuestionEditRequest,
-    ): CancelablePromise<BaseResponse_boolean_ | any> {
+questEditRequest: QuestionEditRequest,
+): CancelablePromise<BaseResponse_boolean_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/edit',
@@ -80,6 +85,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * getQuestionById
      * @param id id
@@ -87,8 +93,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static getQuestionByIdUsingGet(
-        id?: number,
-    ): CancelablePromise<BaseResponse_Question_> {
+id?: number,
+): CancelablePromise<BaseResponse_Question_> {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/quest/get',
@@ -102,6 +108,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * getQuestionVOById
      * @param id id
@@ -109,8 +116,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static getQuestionVoByIdUsingGet(
-        id?: number,
-    ): CancelablePromise<BaseResponse_QuestionVO_> {
+id?: number,
+): CancelablePromise<BaseResponse_QuestionVO_> {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/quest/get/vo',
@@ -124,6 +131,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * listQuestionByPage
      * @param questQueryRequest questQueryRequest
@@ -132,8 +140,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static listQuestionByPageUsingPost(
-        questQueryRequest: QuestionQueryRequest,
-    ): CancelablePromise<BaseResponse_Page_Question_ | any> {
+questQueryRequest: QuestionQueryRequest,
+): CancelablePromise<BaseResponse_Page_Question_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/list/page',
@@ -145,6 +153,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * listQuestionVOByPage
      * @param questQueryRequest questQueryRequest
@@ -153,8 +162,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static listQuestionVoByPageUsingPost(
-        questQueryRequest: QuestionQueryRequest,
-    ): CancelablePromise<BaseResponse_Page_QuestionVO_ | any> {
+questQueryRequest: QuestionQueryRequest,
+): CancelablePromise<BaseResponse_Page_QuestionVO_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/list/page/vo',
@@ -166,6 +175,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * listMyQuestionVOByPage
      * @param questQueryRequest questQueryRequest
@@ -174,8 +184,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static listMyQuestionVoByPageUsingPost(
-        questQueryRequest: QuestionQueryRequest,
-    ): CancelablePromise<BaseResponse_Page_QuestionVO_ | any> {
+questQueryRequest: QuestionQueryRequest,
+): CancelablePromise<BaseResponse_Page_QuestionVO_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/my/list/page/vo',
@@ -187,6 +197,7 @@ export class QuestionControllerService {
             },
         });
     }
+
     /**
      * updateQuestion
      * @param questUpdateRequest questUpdateRequest
@@ -195,8 +206,8 @@ export class QuestionControllerService {
      * @throws ApiError
      */
     public static updateQuestionUsingPost(
-        questUpdateRequest: QuestionUpdateRequest,
-    ): CancelablePromise<BaseResponse_boolean_ | any> {
+questUpdateRequest: QuestionUpdateRequest,
+): CancelablePromise<BaseResponse_boolean_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/update',
@@ -208,4 +219,5 @@ export class QuestionControllerService {
             },
         });
     }
+
 }
