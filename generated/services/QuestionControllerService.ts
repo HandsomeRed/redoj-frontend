@@ -22,18 +22,18 @@ export class QuestionControllerService {
 
     /**
      * addQuestion
-     * @param questAddRequest questAddRequest
+     * @param questionAddRequest questionAddRequest
      * @returns BaseResponse_long_ OK
      * @returns any Created
      * @throws ApiError
      */
     public static addQuestionUsingPost(
-questAddRequest: QuestionAddRequest,
+questionAddRequest: QuestionAddRequest,
 ): CancelablePromise<BaseResponse_long_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/add',
-            body: questAddRequest,
+            body: questionAddRequest,
             errors: {
                 401: `Unauthorized`,
                 403: `Forbidden`,
@@ -66,18 +66,18 @@ deleteRequest: DeleteRequest,
 
     /**
      * editQuestion
-     * @param questEditRequest questEditRequest
+     * @param questionEditRequest questionEditRequest
      * @returns BaseResponse_boolean_ OK
      * @returns any Created
      * @throws ApiError
      */
     public static editQuestionUsingPost(
-questEditRequest: QuestionEditRequest,
+questionEditRequest: QuestionEditRequest,
 ): CancelablePromise<BaseResponse_boolean_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/edit',
-            body: questEditRequest,
+            body: questionEditRequest,
             errors: {
                 401: `Unauthorized`,
                 403: `Forbidden`,
@@ -134,18 +134,18 @@ id?: number,
 
     /**
      * listQuestionByPage
-     * @param questQueryRequest questQueryRequest
+     * @param questionQueryRequest questionQueryRequest
      * @returns BaseResponse_Page_Question_ OK
      * @returns any Created
      * @throws ApiError
      */
     public static listQuestionByPageUsingPost(
-questQueryRequest: QuestionQueryRequest,
+questionQueryRequest: QuestionQueryRequest,
 ): CancelablePromise<BaseResponse_Page_Question_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/list/page',
-            body: questQueryRequest,
+            body: questionQueryRequest,
             errors: {
                 401: `Unauthorized`,
                 403: `Forbidden`,
@@ -156,18 +156,18 @@ questQueryRequest: QuestionQueryRequest,
 
     /**
      * listQuestionVOByPage
-     * @param questQueryRequest questQueryRequest
+     * @param questionQueryRequest questionQueryRequest
      * @returns BaseResponse_Page_QuestionVO_ OK
      * @returns any Created
      * @throws ApiError
      */
     public static listQuestionVoByPageUsingPost(
-questQueryRequest: QuestionQueryRequest,
+questionQueryRequest: QuestionQueryRequest,
 ): CancelablePromise<BaseResponse_Page_QuestionVO_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/list/page/vo',
-            body: questQueryRequest,
+            body: questionQueryRequest,
             errors: {
                 401: `Unauthorized`,
                 403: `Forbidden`,
@@ -178,18 +178,18 @@ questQueryRequest: QuestionQueryRequest,
 
     /**
      * listMyQuestionVOByPage
-     * @param questQueryRequest questQueryRequest
+     * @param questionQueryRequest questionQueryRequest
      * @returns BaseResponse_Page_QuestionVO_ OK
      * @returns any Created
      * @throws ApiError
      */
     public static listMyQuestionVoByPageUsingPost(
-questQueryRequest: QuestionQueryRequest,
+questionQueryRequest: QuestionQueryRequest,
 ): CancelablePromise<BaseResponse_Page_QuestionVO_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/my/list/page/vo',
-            body: questQueryRequest,
+            body: questionQueryRequest,
             errors: {
                 401: `Unauthorized`,
                 403: `Forbidden`,
@@ -200,18 +200,18 @@ questQueryRequest: QuestionQueryRequest,
 
     /**
      * updateQuestion
-     * @param questUpdateRequest questUpdateRequest
+     * @param questionUpdateRequest questionUpdateRequest
      * @returns BaseResponse_boolean_ OK
      * @returns any Created
      * @throws ApiError
      */
     public static updateQuestionUsingPost(
-questUpdateRequest: QuestionUpdateRequest,
+questionUpdateRequest: QuestionUpdateRequest,
 ): CancelablePromise<BaseResponse_boolean_ | any> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/quest/update',
-            body: questUpdateRequest,
+            body: questionUpdateRequest,
             errors: {
                 401: `Unauthorized`,
                 403: `Forbidden`,
